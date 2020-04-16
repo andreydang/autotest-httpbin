@@ -35,6 +35,5 @@ jobs:
       run: |
         pip install pytest
         export PYTHONPATH=src
-        pwd
-        pip install -r ./tests/requirements.txt
+        pip install -r ./requirements.txt
         pytest #-vs ./unit
