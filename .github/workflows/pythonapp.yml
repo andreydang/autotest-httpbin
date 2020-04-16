@@ -36,4 +36,4 @@ jobs:
         pip install pytest
         export PYTHONPATH=src
         #pip install -r ./requirements.txt
-        pytest -vs ./unit
+        pytest #-vs ./unit
