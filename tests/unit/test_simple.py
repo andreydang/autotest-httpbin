@@ -8,6 +8,9 @@ def test_func_slow():
 
 
 def get(url):
+    """Simple  http get request to httpbin
+    :param url : url
+    """
     resp = None
     try:
         resp = requests.get(url)
@@ -17,6 +20,9 @@ def get(url):
 
 
 def test_get(url):
+    """Simple http get request to httpbin
+    :param url : fixture which return url
+    """
     resp = get(url)
     assert resp.json()["url"] == url
     assert resp.status_code == 200
