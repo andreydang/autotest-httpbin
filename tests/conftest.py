@@ -17,6 +17,7 @@ def cmdopt(request):
 
 @pytest.fixture
 async def url(cmdopt):
+    """Default url"""
     url = 'http://httpbin.org/'
     if cmdopt == url:
         print(url)
