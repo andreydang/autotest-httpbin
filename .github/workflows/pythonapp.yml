@@ -22,9 +22,8 @@ jobs:
         python-version: 3.8
     - name: Install dependencies
       run: |
-        export PYTHONPATH=src
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        #pip install -r requirements.txt
     - name: Lint with flake8
       run: |
         pip install flake8
@@ -35,5 +34,6 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
+        export PYTHONPATH=src
         #pip install -r ./requirements.txt
         pytest -vs ./unit
